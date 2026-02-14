@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Invitación a San Valentín</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<audio id="musicaSi"><source src="musica.mp3" type="audio/mpeg"></audio>
+<audio id="musicaNo"><source src="musica2.mp3" type="audio/mpeg"></audio>
+
+<div class="container">
+
+    <div id="mainInterface">
+        <div id="gifContainer"><img src="mocha.gif"></div>
+        <div id="sadGifContainer" style="display:none;"><img src="mocha2.gif"></div>
+        <div id="sadGifContainer1" style="display:none;"><img src="mocha3.gif"></div>
+        <div id="sadGifContainer2" style="display:none;"><img src="mocha4.gif"></div>
+
+        <img id="imgNo1" class="no-img" src="imagensanval3no.jpeg" style="display:none;">
+        <img id="imgNo2" class="no-img" src="imagensanval4no.jpeg" style="display:none;">
+
+        <h1 id="question">💖 Celeste hermosa… ¿quieres ser mi San Valentín? 💖</h1>
+
+        <div class="buttons">
+            <button id="siBtn">Sí 💚</button>
+            <button id="noBtn">No 😒</button>
+        </div>
+    </div>
+
+    <div id="yesInterface" style="display:none;">
+        <div class="yes-gallery">
+            <img class="side-img img-left" src="imagensanval1.jpeg">
+            <div class="center-gifs">
+                <img id="happyGif1" src="mocha5final.gif">
+                <img id="happyGif2" src="mocha6final.gif" style="display:none;">
+                <img id="happyGif3" src="mocha7final.gif" style="display:none;">
+                <img id="happyGif4" src="mocha9final.gif" style="display:none;">
+            </div>
+            <img class="side-img img-right" src="imagensanval2.jpeg">
+        </div>
+        <div id="messageContainer">💖 Sabía que dirías que sí, te amo mi Celeste hermosa 💖</div>
+        
+        <button id="btnCarta" class="btn-special" style="display:none;">Haz clic aquí mi amor ✨</button>
+    </div>
+
+    <div id="cartaInterface" style="display:none;">
+        <div class="heart-container">
+            <div class="heart"></div>
+        </div>
+        <div class="carta-box">
+            <h2>Para mi reina Celeste 👑</h2>
+            <p>Thaizh, quería decirte que eres la persona más especial en mi vida. No solo hoy, sino todos los días agradezco tenerte a mi lado.</p>
+            <p>Tu sonrisa ilumina mi mundo y tu forma de ser me enamora cada día más. Eres mi prioridad, mi alegría y mi gran amor. ¡Gracias por existir!</p>
+            <p class="firma">Siempre tuyo ❤️</p>
+        </div>
+        <button class="btn-volver" onclick="location.reload()">Regresar 🔄</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
